@@ -2523,7 +2523,7 @@
         <div class="footer-links">
           <a href="#" id="footerCareersHome">Careers</a>
           <a href="#faq" id="faq">FAQ</a>
-          <a href="contact.html">Contact</a>
+          <a href="#" id="footerContactHome">Contact</a>
         </div>
         <div class="footer-legal">
           &copy; 2026 Subline Inc.<br>
@@ -2548,7 +2548,7 @@
           <div class="form-header">
             <h2>Request Access</h2>
           </div>
-          <form id="contactForm" action="https://formspree.io/f/xaqldrlk" method="POST" novalidate>
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate>
             <div class="form-row">
               <div class="form-group">
                 <label for="c-name">Full Name</label>
@@ -2963,8 +2963,9 @@
     document.getElementById('footerCareersCareers').addEventListener('click', e => { e.preventDefault(); showPage('careers'); });
     document.getElementById('footerFaqCareers').addEventListener('click', e => { e.preventDefault(); showPage('faq'); });
     document.getElementById('footerContactCareers').addEventListener('click', e => { e.preventDefault(); showPage('contact'); });
-    // Home footer careers
+    // Home footer careers + contact
     document.getElementById('footerCareersHome').addEventListener('click', e => { e.preventDefault(); showPage('careers'); });
+    document.getElementById('footerContactHome').addEventListener('click', e => { e.preventDefault(); showPage('contact'); });
 
     // ── FAQ ACCORDION ─────────────────────────────────────────────────────────────
     function toggleFaq(index) {
